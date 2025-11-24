@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INCEPTION - Movie Poster</title>
+  <!-- Import Google Fonts for styling the text to look nice -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* Set the background image and some basic font styles for the whole page */
+    html {
+      background-image: url('images/inception-bg.jpg'); /* Background image of the movie poster */
+      background-size: cover;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #f1f1f1; /* Light text color */
+      margin: 0;
+      min-height: 100vh;
+    }
+    /* Add a translucent black overlay to improve text readability */
+    body {
+      background: rgba(0, 0, 0, 0.7);
+      margin: 0;
+      padding: 2em;
+    }
+    /* Center content and limit width for better reading */
+    header, main, footer {
+      max-width: 600px;
+      margin: auto;
+    }
+    /* Large main heading with custom font */
+    h1 {
+      font-family: 'Oswald', Arial, sans-serif;
+      font-size: 3em;
+      letter-spacing: 0.15em;
+      color: #e84a5f; /* Red-ish color */
+      text-align: center;
+      animation: flicker 1.5s infinite alternate; /* Flicker animation for fun */
+    }
+    /* Tagline styling: italic and centered */
+    .tagline {
+      font-size: 1.5em;
+      text-align: center;
+      font-style: italic;
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+    }
+    /* Credits aligned right with lighter color */
+    .credits {
+      text-align: right;
+      font-size: 1em;
+      margin-bottom: 1em;
+      color: #ccc;
+    }
+    /* Flex container for cast names with some spacing */
+    .cast-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: center;
+      font-size: 1.1em;
+      margin-bottom: 1em;
+    }
+    /* Each cast member styled as a pill */
+    .cast-list span {
+      background: rgba(40, 40, 40, 0.5);
+      padding: 0.3em 0.7em;
+      border-radius: 2em;
+    }
+    /* Release date highlight */
+    .release {
+      font-size: 1.3em;
+      color: #ffe066;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    /* Hyperlink styling with hover effect */
+    .links a {
+      color: #f6cd61;
+      text-decoration: none;
+      margin: 0 1em;
+      transition: color 0.3s;
+    }
+    .links a:hover {
+      color: #ff6f69;
+    }
+    /* Center poster image and caption */
+    figure {
+      margin: 2em 0;
+      text-align: center;
+    }
+    figcaption {
+      font-size: 0.9em;
+      color: #bcc3c9;
+      margin-top: 0.5em;
+    }
+    /* Footer text style */
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      text-align: center;
+      color: #888;
+    }
+    /* Flicker animation keyframes */
+    @keyframes flicker {
+      0% { color: #e84a5f; text-shadow: 0 0 5px #e84a5f; }
+      100% { color: #ffe066; text-shadow: 0 0 15px #ffe066; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page header with main title, tagline, and credits -->
+  <header>
+    <h1>INCEPTION</h1>
+    <div class="tagline">"Your mind is the scene of the crime."</div>
+    <div class="credits">
+      From the director of <em>The Dark Knight</em> — Christopher Nolan
+    </div>
+  </header>
+
+  <!-- Main content area for poster image, cast, release info, and links -->
+  <main>
+    <!-- Poster image with caption -->
+    <figure>
+      <img src="images/inception-poster.jpg" alt="Official Inception Movie Poster" width="350">
+      <figcaption>The original theatrical poster for Christopher Nolan's "Inception" (2010).</figcaption>
+    </figure>
+
+    <!-- Cast section -->
+    <section class="cast">
+      <h2>Starring</h2>
+      <div class="cast-list">
+        <span>Leonardo DiCaprio</span>
+        <span>Joseph Gordon-Levitt</span>
+        <span>Ellen Page</span>
+        <span>Tom Hardy</span>
+        <span>Ken Watanabe</span>
+        <span>Cillian Murphy</span>
+        <span>Marion Cotillard</span>
+        <span>Michael Caine</span>
+      </div>
+    </section>
+
+    <!-- Release Date -->
+    <div class="release">
+      Coming Soon – July 16
+    </div>
+
+    <!-- Useful external links -->
+    <div class="links">
+      <a href="https://www.warnerbros.com/movies/inception" target="_blank">Official Site</a>
+      <a href="https://www.rottentomatoes.com/m/inception" target="_blank">Rotten Tomatoes Reviews</a>
+      <a href="https://www.imdb.com/title/tt1375666/" target="_blank">IMDb Page</a>
+    </div>
+  </main>
+
+  <!-- Footer with copyright and student info -->
+  <footer>
+    &copy; 2010 Warner Bros. Pictures. For educational purposes only.<br>
+    Poster background image and assets &copy; their respective owners.<br>
+    <!-- Student Info -->
+    <!-- Name: Vrushil Panchal -->
+    <!-- Roll No: 200628377 -->
+  </footer>
+</body>
+</html>
